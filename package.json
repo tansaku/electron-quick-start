@@ -2,9 +2,10 @@
   "name": "electron-quick-start",
   "version": "1.0.0",
   "description": "A minimal Electron application",
+  "v8Flags": "--harmony",
   "main": "main.js",
   "scripts": {
-    "start": "electron --js-flags='--harmony' ."
+    "start": "electron ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
