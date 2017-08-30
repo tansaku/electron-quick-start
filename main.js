@@ -7,11 +7,17 @@ const BrowserWindow = electron.BrowserWindow
 const path = require('path')
 const url = require('url')
 
+// if (!~process.execArgv.indexOf('--harmony')) {
+//   throw 'Node.js must be run with --harmony flag';
+// }
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
 function createWindow () {
+  match = /(?<![-−ー〜→])NUMBER(\d+)([-−ー〜→])NUMBER(\d+)(?![0-9-−ー〜→])/u.exec('stxt');
+  // throw new Error("ES6 is required; add --harmony");
   // Create the browser window.
   mainWindow = new BrowserWindow({width: 800, height: 600})
 

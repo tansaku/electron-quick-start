@@ -4,7 +4,7 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron --js-flags='--harmony' ."
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
